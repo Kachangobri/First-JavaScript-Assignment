@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First JS Assignment</title>
+</head>
+<body>
+    <script>
+
+        function WeightToPounds(name, weightKg) {
+  // Conversion factor: 1 kg = 2.20462 pounds
+  const weightLbs = weightKg * 2.20462;
+
+  // Creating a message
+  const message = `${name}, your weight is ${weightLbs.toFixed(2)} pounds.`;
+
+  // Display the message using the alert method
+  alert(message);
+}
+
+const name = prompt("Please enter your name:");
+const weightKg = parseFloat(prompt("Please enter your weight in kilograms:"));
+
+
+WeightToPounds(name, weightKg);
+
+    </script>
+</body>
+</html>
